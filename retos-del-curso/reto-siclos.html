@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      }
+      html {
+        display: flex;
+        font-size: 62.5%;
+        font-family: 'Rubik', sans-serif;
+        background-color: #050505;
+        align-items: center;
+        justify-content: center;
+      }
+    body {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.6rem;
+      align-items: center;
+      background-color: #fff;
+      width: 90rem;
+      height: 100%;
+      margin: 6rem 0;
+      border-radius: .5rem;
+      box-shadow: 0 1px 25px #a1a1a1;
+      padding-bottom: 1rem;
+    }
+    img {
+      padding: 4rem 0;
+      width: 20rem;
+    }
+    h1 {
+      color: rgb(20, 132, 132);
+      font-size: 4rem;
+    }
+    h3 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.6rem;
+    }
+    div {
+      margin: 2rem;
+    }
+    input {
+      padding: .5rem;
+      border-radius: .5rem;
+    }
+    .butom {
+      padding: .5rem;
+      border-radius: .5rem;
+      margin-left: 2rem;
+      border-color: rgb(20, 132, 132);
+      background-color: rgb(20, 132, 132);
+      color: #fff;
+    }
+  </style>
+  <title>Adivina la palabra</title>
+</head>
+<body>
+  <img src="https://coderiddle.netlify.app/img/img1.png" alt="">
+  <h1>Adivina la palabra</h1>
+  <h3>Tienes tres intentos para adivinar la palabra oculta</h3>
+  <p>Se trata de adivinar el nombre de una fruta de color amarillo</p>
+  <p>¡¡¡Buena suerte!!!</p>
+  <div class="form-container">
+    <form>
+      <label for="">✍🏻 Ingresa la palabra:
+        <input type="text" required>
+      </label>
+      <input class="butom" type="submit" value="Revisar palabra">
+    </form>
+  </div>
+  <script src="./reto-siclos.js"></script>
+</body>
+</html>
